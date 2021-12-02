@@ -16,10 +16,7 @@ class AddStatusToTasksTable extends Migration
      
     public function up()
     {
-        $request->validate([
-            'content' => 'required|max:10',
-            ]);
-            
+        
         Schema::table('tasks', function (Blueprint $table) {
             $table->string('status');
         });

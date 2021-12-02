@@ -12,13 +12,11 @@
             
         @include('commons.navbar')
         
-          
-
         <div class="container">
             
-            @include('commons.error_tasks')
+        @include('commons.error_tasks')
             
-            @yield('content')
+        @yield('content')
         </div>
         
           <div class="collapse navbar-collapse" id="nav-bar">

@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Task;
 
-  @include('commons.navbar');
-
 class TasksController extends Controller
 {
     /**
@@ -48,6 +46,7 @@ class TasksController extends Controller
     {
         $request->validate([
             'content' => 'required',
+            'status' => 'required|max:10',
             ]);
         
         $task = new Task;
