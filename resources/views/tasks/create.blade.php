@@ -13,7 +13,7 @@
                     {!! Form::label('content', 'タスク:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                     {!! Form::label('content', 'ステータス:') !!}
-                    {!! '<input type="text" name="status">' !!}
+                    <input type="text" class="form-control" name="status">
                 </div>
                    
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
